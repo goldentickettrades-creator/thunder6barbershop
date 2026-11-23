@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goldentickettrades-creator.github.io/thunder6barbershop/sitemap.xml

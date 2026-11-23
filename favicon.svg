@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Thunder 6 mark">
+  <polygon points="32,3 57,17.5 57,46.5 32,61 7,46.5 7,17.5" fill="#0d1014" stroke="#c9a15b" stroke-width="3.2" stroke-linejoin="round"/>
+  <polygon points="32,10 51,21 51,43 32,54 13,43 13,21" fill="none" stroke="#c9a15b" stroke-opacity=".35" stroke-width="1.2"/>
+  <path d="M36.5 12 L21 35.5 H30.5 L26.5 52 L43 27.5 H33.2 Z" fill="#ece6da"/>
+</svg>
