@@ -24,15 +24,16 @@
     ticking = false;
     if (reduce.matches) return;
     const y = scrollY;
-    for (const l of layers) {
-      const r = l.host.getBoundingClientRect();
-      if (r.bottom < -200 || r.top > vh + 200) continue; // offscreen: skip work
+    const rects = layers.map((l) => l.host.getBoundingClientRect()); // read all, then write
+    layers.forEach((l, i) => {
+      const r = rects[i];
+      if (r.bottom < -200 || r.top > vh + 200) return; // offscreen: skip work
       // distance of section centre from viewport centre (hero uses raw scroll)
       const delta = l.host.classList.contains('hero') ? y : (r.top + r.height / 2 - vh / 2);
       const lim = vh < 700 || innerWidth < 820 ? 36 : 90; // keep layered art from drifting into copy
       const t = l.host.classList.contains('hero') ? delta * l.depth : Math.max(-lim, Math.min(lim, -delta * l.depth));
       l.el.style.transform = `translate3d(0, ${t.toFixed(2)}px, 0)`;
-    }
+    });
     if (heroInner) heroInner.style.opacity = Math.max(0, 1 - y / (vh * 0.75)).toFixed(3);
   };
   const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };

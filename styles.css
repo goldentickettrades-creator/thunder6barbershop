@@ -212,7 +212,7 @@ h2 em{color:var(--brass-2)}
 .footer-contact span{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass)}
 .footer-contact a{text-decoration:none;word-break:break-word}
 .footer-contact a:hover{color:var(--brass-2)}
-.footer-fine{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.8rem;color:#7d776d}
+.footer-fine{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.8rem;color:#a39c90}
 
 /* mobile call button */
 .call-fab{position:fixed;left:50%;bottom:calc(1rem + env(safe-area-inset-bottom));z-index:60;display:none;align-items:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:999px;background:linear-gradient(180deg,var(--brass-2),var(--brass));color:#15110a;font:700 1rem/1 var(--sans);text-decoration:none;box-shadow:0 14px 40px -10px rgba(0,0,0,.8);transform:translate(-50%,140%);transition:transform .5s var(--ease)}
